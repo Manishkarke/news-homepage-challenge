@@ -1,0 +1,35 @@
+.header { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;;
+}
+
+.logo {
+  width: 75px;
+  flex: 1 1 50%;
+  text-align: start;
+}
+.navbar {
+    flex-basis: 1 1 50%;
+}
+.navbar ul {
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul li a {
+  display: inline-block;
+  height: inherit;
+  padding: 5px 18px;
+  text-decoration: none;
+  color: var(--neutral-Dark-grayish-blue);
+}
+
+.navbar ul li a:hover {
+  color: var(--primary-soft-orange);
+}
