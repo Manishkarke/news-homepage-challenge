@@ -6,8 +6,6 @@
 }
 
 .news-section {
-  margin-right: 2rem;
-  /* width: 22.44rem; */
   height: 8.75rem;
   display: flex;
   /* flex: 1 1 100%; */
@@ -42,7 +40,8 @@ p {
 .sub-section > h2,
 h3,
 p {
+  font-size: .5vw;
   margin: 0;
-  width: 15.625rem;
-  padding-bottom: 0.5rem;
+  max-width: 300px;
+  /* padding-bottom: 0.5rem; */
 }

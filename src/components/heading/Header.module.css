@@ -6,12 +6,13 @@
 }
 
 .logo {
-  width: 75px;
+  width: 10vw;
   flex: 1 1 50%;
   text-align: start;
 }
 .navbar {
-    flex-basis: 1 1 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 .navbar ul {
   padding: 0;

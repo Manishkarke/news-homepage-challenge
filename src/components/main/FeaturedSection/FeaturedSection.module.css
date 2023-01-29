@@ -1,48 +1,58 @@
 .featuredSection {
-  width: 56.25rem;
+  width: 60%;
   display: flex;
   flex-wrap: wrap;
 }
 
 .featuredSection > img {
   width: 100%;
-  margin-right: 100px;
-  /* flex: 1 1 100%; */
+  /* margin-right: 100px; */
+  flex: 1 1 100%;
 }
 
 .section {
-  padding-top: 2rem;
+  width:100%;
+  padding-top: 3em;
   display: flex;
+  justify-content: space-evenly;
+
+  line-height: 1.3;
+  
 }
 
-.section > h1 {
-  width: 31.25rem;
+.section > .sub-section1 {
+  width: 100%;
   flex: 1 1 50%;
-  font-weight: 800;
-  padding-right: 7.06rem;
+  font-weight: 900;
+  margin-right: 2em;
   color: var(--neutral-Very-dark-blue);
 }
 
-.sub-section {
-  width: 50%;
-  text-align: start;
+.sub-section1 > h1 {
+  text-align: center;
+  font-size: 2em;
+  width: 200px;
 }
-.sub-section > p {
-  width: 21.875rem;
+
+.sub-section2 {
+  text-align: justify;
+}
+.sub-section2 > p {
+  width: 21.875em;
   font-size: 18px;
-  line-height: 1.25;
+  line-height: 1.35;
   color: var(--neutral-Dark-grayish-blue);
 }
 
 button {
-  margin-top: 1rem;
+  margin-top: 2rem;
   border: 0;
   color: var(--neutral-Off-white);
-  font-size: 1.25rem;
+  font-size: 1.25em;
   background-color: var(--primary-soft-red);
   display: inline-block;
-  padding: 1rem 0;
-  width: 15rem;
+  padding: 10px 0;
+  width: 200px;
 }
 
 button:hover {

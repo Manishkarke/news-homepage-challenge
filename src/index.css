@@ -6,17 +6,16 @@
   --neutral-Very-dark-blue: hsl(240, 100%, 5%);
   --neutral-Grayish-blue: hsl(233, 8%, 79%);
 }
-/* 
+
 @font-face {
-  font-family: Inter-Regular;
-  /* src: url(./assets/fonts/static/Inter-Regular.ttf);
-} */
+  font-family: "Inter-Regular";
+  src: local("Inter-Regular"), url("./components/fonts/Inter-Regular.ttf") format("truetype");
+}
 
 body {
   margin: 0;
-  padding: 75px 11.5%;
-  font-size: 1.25rem;
-  text-align: start;
+  font-family: "Inter-Regular";
+  font-size: .5vw;
   font-family: Inter-Regular;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
