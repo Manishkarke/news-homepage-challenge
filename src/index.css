@@ -5,6 +5,10 @@
   --neutral-Dark-grayish-blue: hsl(236, 13%, 42%);
   --neutral-Very-dark-blue: hsl(240, 100%, 5%);
   --neutral-Grayish-blue: hsl(233, 8%, 79%);
+
+
+  --fs-para: .8em;
+  --fs-link: 1.2em;
 }
 
 @font-face {
@@ -15,7 +19,7 @@
 body {
   margin: 0;
   font-family: "Inter-Regular";
-  font-size: .5vw;
+  font-size: var(--fs-para);
   font-family: Inter-Regular;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
