@@ -6,11 +6,12 @@
 }
 
 .logo {
-  width: 10vw;
-  flex: 1 1 50%;
+  width: 75px;
+  flex: 1 1 40%;
   text-align: start;
 }
 .navbar {
+  width: 50%;
     flex-grow: 1;
     flex-shrink: 1;
 }
