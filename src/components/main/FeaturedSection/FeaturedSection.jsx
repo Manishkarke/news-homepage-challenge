@@ -4,10 +4,15 @@ import style from "./FeaturedSection.module.css";
 const FeaturedSection = () => {
   return (
     <div className={style.featuredSection}>
-      <img src="./assets/images/image-web-3-desktop.jpg" alt="Web3_Photo" />
+      <img
+        src='./assets/images/image-web-3-desktop.jpg'
+        alt='Web3_Photo'
+      />
 
       <div className={style["section"]}>
-        <h1>The Bright Future of Web 3.0?</h1>
+        <div className={style["hero-heading"]}>
+          <h1>The Bright Future of Web 3.0?</h1>
+        </div>
 
         <div className={style["sub-section"]}>
           <p>

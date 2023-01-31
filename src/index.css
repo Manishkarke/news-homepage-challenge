@@ -5,7 +5,20 @@
   --neutral-Dark-grayish-blue: hsl(236, 13%, 42%);
   --neutral-Very-dark-blue: hsl(240, 100%, 5%);
   --neutral-Grayish-blue: hsl(233, 8%, 79%);
+
+  --fs-heading: 2.8vw;
+  --fs-subhead: 1.3vw;
+  --fs-para: 1.27vw;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  text-size-adjust: auto;
+}
+
 /* 
 @font-face {
   font-family: Inter-Regular;
@@ -13,9 +26,8 @@
 } */
 
 body {
-  margin: 0;
-  padding: 75px 11.5%;
-  font-size: 1.25rem;
+  /* padding: 75px 11.5%; */
+  font-size: var(--fs-para);
   text-align: start;
   font-family: Inter-Regular;
   -webkit-font-smoothing: antialiased;

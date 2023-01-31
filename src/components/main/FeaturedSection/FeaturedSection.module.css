@@ -1,35 +1,46 @@
 .featuredSection {
-  width: 56.25rem;
+  /* width: 56.25rem; */
+  width: 47vw;
   display: flex;
   flex-wrap: wrap;
 }
 
-.featuredSection > img {
+.featuredSection>img {
   width: 100%;
   margin-right: 100px;
-  /* flex: 1 1 100%; */
+  flex: 1 1 100%;
 }
 
 .section {
   padding-top: 2rem;
   display: flex;
+
+  text-align: justify;
 }
 
-.section > h1 {
-  width: 31.25rem;
+.section .hero-heading {
   flex: 1 1 50%;
-  font-weight: 800;
+  font-weight: 900;
   padding-right: 7.06rem;
   color: var(--neutral-Very-dark-blue);
+}
+
+.section .hero-heading h1 {
+  font-size: var(--fs-heading);
+  text-align: start;
+  width: 15vw;
 }
 
 .sub-section {
   width: 50%;
   text-align: start;
 }
-.sub-section > p {
-  width: 21.875rem;
-  font-size: 18px;
+
+.sub-section>p {
+  width: 100%;
+  /* width: 21.875rem; */
+  text-align: justify;
+  /* font-size: var(--fs-shrink); */
   line-height: 1.25;
   color: var(--neutral-Dark-grayish-blue);
 }
@@ -38,14 +49,15 @@ button {
   margin-top: 1rem;
   border: 0;
   color: var(--neutral-Off-white);
-  font-size: 1.25rem;
+  font-size: var(--fs-subhead);
   background-color: var(--primary-soft-red);
   display: inline-block;
   padding: 1rem 0;
-  width: 15rem;
+  width: 70%;
+  /* width: ; */
 }
 
 button:hover {
-    cursor: pointer;
-    background-color: var(--neutral-Very-dark-blue);
+  cursor: pointer;
+  background-color: var(--neutral-Very-dark-blue);
 }
