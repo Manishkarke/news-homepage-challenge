@@ -1,4 +1,12 @@
+/* CSS Resetting: Here we reset the Default css given by Browser. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
+  /* COLOR VARIABLES */
   --primary-soft-orange: hsl(35, 77%, 62%);
   --primary-soft-red: hsl(5, 85%, 63%);
   --neutral-Off-white: hsl(36, 100%, 99%);
@@ -6,21 +14,102 @@
   --neutral-Very-dark-blue: hsl(240, 100%, 5%);
   --neutral-Grayish-blue: hsl(233, 8%, 79%);
 
+  /* FONT Size Variables. */
+  --fs-header: 2.5rem;
+  --fs-section: 2rem;
+  --fs-subheader: 1.1rem;
+  --fs-paragraph: 14px;
+  --fs-button: 1.25rem;
 
-  --fs-para: .8em;
-  --fs-link: 1.2em;
+  /* Widths. */
+  --app-width: 72%;
+  --feat-section-width: 65%;
+  --new-section-width: 30%;
+  --news-img-width: 30%;
+  --button-width: 200px;
+
+  /* Height of Sections */
+  --news-height: 10rem;
+
+  /* Margins and Paddings Variables */
+  --container-margin: 75px 14%;
+  --ml-newsection: 5%;
+  --pl-news-section: 4%;
+  --pr-news-section: 3%;
+  --pt-news-container: 5%;
 }
+
+/******** MEDIA QUERIES FOR DIFFERENT SCREEN SIZES */
+/* For Normal devices- Like small laptops and larger Ipad */
+/* @media only screen and(min-width: 1431px) and (max-width: 1505px) {
+  :root {
+    /* FONT Size Variables. 
+    --fs-header: 2rem;
+    --fs-section: 1.5rem;
+    --fs-subheader: 1.05rem;
+    --fs-paragraph: 14px;
+    --fs-button: 1.25rem;
+
+    /* Widths. 
+    --app-width: 72%;
+    --feat-section-width: 65%;
+    --new-section-width: 30%;
+    --news-img-width: 30%;
+    --button-width: 200px;
+
+    /* Margins Variables 
+    --container-margin: 55px 14%;
+    --ml-newsection: 5%;
+    --pl-news-section: 4%;
+    --pr-news-section: 3%;
+    --pt-news-container: 5%;
+  }
+} */
+
+@media only screen and (max-width: 1494px) {
+  :root {
+    /* FONT SIZES */
+    --fs-header: 1.7rem;
+    --fs-section: 1.3rem;
+    --fs-subheader: 1rem;
+    --fs-paragraph: 14px;
+    --fs-button: 1.2rem;
+
+    /* WIDTH OF SECTIONS */
+    /* --app-width: 72%; */
+  }
+}
+
 
 @font-face {
   font-family: "Inter-Regular";
-  src: local("Inter-Regular"), url("./components/fonts/Inter-Regular.ttf") format("truetype");
+  src: local("Inter-Regular"),
+    url("./components/fonts/Inter-Regular.ttf") format("truetype");
 }
 
 body {
-  margin: 0;
   font-family: "Inter-Regular";
-  font-size: var(--fs-para);
   font-family: Inter-Regular;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* max-width: 100vh; */
+
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+h2 {
+  font-size: var(--fs-section);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: var(--fs-subheader);
+}
+
+p {
+  font-size: var(--fs-paragraph);
+  font-weight: 400;
+  line-height: 1.5;
 }

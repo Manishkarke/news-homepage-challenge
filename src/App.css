@@ -2,9 +2,10 @@
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
-  width: 75vw;
-  margin: auto;
-  padding-top: 50px;
+  width: var(--app-width);
+  /* margin: auto; */
+  margin: var(--container-margin);
+  /* padding-top: 50px; */
 }
 
 .attribution {
